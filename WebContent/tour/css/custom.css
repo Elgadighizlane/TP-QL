@@ -1,0 +1,28 @@
+#colorlib-hero{
+    height: 75vh !important;
+    overflow: hidden;
+}
+option{
+	color:black;
+}
+.flexit{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+}
+.valider{
+	 position: absolute;
+   left:50%;
+   transform: translate(-50%,0%);
+   width:250px;
+}
+.gridit{
+	display:grid;
+    grid-template-columns: 20% 80%;
+}
+.aside{
+	 display: flex !important;
+	 flex-direction:column;
+    justify-content: space-between;
+    min-height:100vh;
+}
