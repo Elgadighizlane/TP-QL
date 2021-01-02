@@ -36,7 +36,7 @@ public class Add_hotel extends HttpServlet {
 		Hotel hotel=new Hotel(0, request.getParameter("nom_hotel"),request.getParameter("ville_hotel"),request.getParameter("addresse_hotel"),0,Integer.parseInt(request.getParameter("etoile_hotel")));
 		int id_hotel=d.ajouter_HOTEL(hotel);
 		String url="/gerer_hotel?id_hotel="+String.valueOf(id_hotel);
-		response.sendRedirect( request.getContextPath() +url);
+		response.sendRedirect( request.getContextPath() + url);
 		
 	}
 
