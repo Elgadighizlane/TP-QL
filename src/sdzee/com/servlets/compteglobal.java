@@ -35,11 +35,9 @@ public class compteglobal extends HttpServlet {
 
     	if ( session.getAttribute("session_global") == null ) {
     			
-	         	response.sendRedirect( request.getContextPath() +"/Loginusers");
+	         	response.sendRedirect( request.getContextPath() + "/Loginusers");
 	        } else {
     	Database d=new Database();
-    	//HashMap<String,List<String>> VilleHotel= d.ShowHotelVille();
-    	//request.setAttribute("VilleHotel", VilleHotel);
 		Admin_global r =(Admin_global)session.getAttribute("session_global");
 		response.setHeader("Cache-Control","no-cache , no-store ,must-revalidate");
     	this.getServletContext().getRequestDispatcher( "/WEB-INF/compte_global.jsp" ).forward( request, response );
